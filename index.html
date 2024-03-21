@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="./style.css">
+    <title>Сторінка міні-гри</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="list-navigation">
+                <li class="list-navigation-item">
+                    <a href="#nav-1">Про мене</a>
+                </li>
+                <li class="list-navigation-item">
+                    <a href="#nav-2">Опис міні-гри 2048</a>
+                </li>
+                <li class="list-navigation-item">
+                    <a href="#nav-3">Галерея</a>
+                </li>
+                <li class="list-navigation-item">
+                    <a href="#nav-4">Гра</a>
+                </li>
+                <li class="list-navigation-item">
+                    <a href="#nav-5">Зворотній зв’язок</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1 id="nav-1">Про мене</h1>
+            <div class="game-description">
+            <p>Всім привіт! Мене звати Олексій і я Frontend Developer-початківець. 
+                На даний час навчаюсяна курсі «Front-end. Базовий курс від Ciklum», що на платформі онлайн-курсів Prometheus. 
+                На даному курсі буду опановувати навички Front-end розробки.
+            </p>
+           </div>
+        </section>
+        <section>
+            <h2 id="nav-2">Опис міні-гри 2048</h2>
+            <div class="game-description">
+            <p>
+                2048 — відеогра, початково браузерна, написана 19-річним італійським розробником Габріелем Чіруллі мовою програмування JavaScript. 
+                Гра є числовою головоломкою з полем у формі квадрата 4x4 клітинки. 
+                Мета гри — складаючи плитки з числами, отримати плитку номіналу «2048», звідки й назва.
+            </p>
+            <p>
+                Гра починається на квадратному полі з 16-и клітинок, де дві клітинки зайняті плитками номіналом «2» і «4». 
+                Кожну плитку можна перемістити по горизонталі чи вертикалі.
+            </p> 
+            <p> Щоразу як гравець переміщує плитку, на полі з'являється додаткова плитка номіналу «2» (з ймовірністю 90 %) або «4» (з ймовірністю 10 %). 
+                Дві плитки одного номіналу, будучи поміщеними на одну клітинку, зливаються в одну, номінал якої дорівнює сумі злитих.
+            </p>
+            <p> Якщо в одній з ліній після руху поряд стоять понад дві плитки одного номіналу, то вони зливаються автоматично. 
+                Кожному номіналу відповідає свій колір, що більший номінал, то «гарячіший» колір.
+            </p>
+            <p> За кожне злиття ігрові очки збільшуються на номінал новоутвореної плитки. Метою є отримати плитку «2048», після чогодозволяється продовжити. 
+                Гра закінчується, якщо після чергового переміщення неможливо виконати жодне злиття плиток.
+            </p>
+            
+        </div>
+        </section>
+        <section>
+            <h2 id="nav-3">Галерея</h2>
+            <ul class="gallery-box">
+                <li class="gallery-box-item">
+                    <img src="./images/photo_1.png" width="150" alt="photo_1">
+                </li>
+                <li class="gallery-box-item">
+                    <img src="./images/photo_2.png" width="150" alt="photo_2">
+                </li>
+                <li class="gallery-box-item">
+                    <img src="./images/photo_3.png" width="150" alt="photo_3">
+                </li>
+                <li class="gallery-box-item">
+                    <img src="./images/photo_4.png" width="150" alt="photo_4">
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2 id="nav-4">Гра</h2>
+            <div class="game-box">
+            </div>
+        </section>
+        <section>
+            <h2 id="nav-5">Зворотній зв’язок</h2>
+            <form class="form-container" action="/" method="post">
+            <div class="form-box">
+                <label for="input-name">Ім’я:</label>
+                <input class="input-form" type="text" id="input-name" name="name" placeholder="Введіть ім’я">
+            </div>
+            <div class="form-box">
+                <label for="input-mail">Email:</label>
+                <input class="input-form" type="text" name="mail" id="input-mail" placeholder="Введіть електронну адресу">
+            </div>
+            <div class="form-box">
+                <label for="input-message">Повідомлення:</label>
+                <textarea class="input-form-message" name="message" id="input-message" cols="54" rows="6" placeholder="Введіть повідомлення"></textarea>
+            </div>
+            <button class="btn-submit" type="submit">Відправити</button>
+        </form>
+        </section>
+
+    </main>
+    <footer>
+        <div class="footer">
+            <p class="footer-text">By Oleksiy Dovhan, 2024</p>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
